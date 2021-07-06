@@ -1,0 +1,12 @@
+Jul-06-2021 08:28:20 - [CRITICAL] - main - multi_handlers - Line: 65 - Odd and Even numbers below 20.
+Jul-06-2021 08:28:20 - [DEBUG] - FILE - multi_handlers - Line: 70 - 0 is an even number.
+Jul-06-2021 08:28:20 - [DEBUG] - FILE - multi_handlers - Line: 70 - 2 is an even number.
+Jul-06-2021 08:28:20 - [DEBUG] - FILE - multi_handlers - Line: 70 - 4 is an even number.
+Jul-06-2021 08:28:20 - [DEBUG] - FILE - multi_handlers - Line: 70 - 6 is an even number.
+Jul-06-2021 08:28:20 - [DEBUG] - FILE - multi_handlers - Line: 70 - 8 is an even number.
+Jul-06-2021 08:28:20 - [DEBUG] - FILE - multi_handlers - Line: 70 - 10 is an even number.
+Jul-06-2021 08:28:20 - [DEBUG] - FILE - multi_handlers - Line: 70 - 12 is an even number.
+Jul-06-2021 08:28:20 - [DEBUG] - FILE - multi_handlers - Line: 70 - 14 is an even number.
+Jul-06-2021 08:28:20 - [DEBUG] - FILE - multi_handlers - Line: 70 - 16 is an even number.
+Jul-06-2021 08:28:20 - [DEBUG] - FILE - multi_handlers - Line: 70 - 18 is an even number.
+Jul-06-2021 08:28:20 - [CRITICAL] - main - multi_handlers - Line: 71 - End of loop.
