@@ -31,22 +31,19 @@ fileName = datetime.now().strftime('logs/multi_handlers_%H:%M:%S_%d-%m-%Y.log') 
 fileHandler = logging.FileHandler(filename=fileName)
 fileHandler.setFormatter(fmt=logFormatter)  # Sets the Formatter for this handler to fmt.
 fileLogger.setLevel(level=logging.DEBUG)  # Sets the threshold for this logger to level.
-fileLogger.addHandler(hdlr=fileHandler)  # Adds the specified handler to this logger.
+fileLogger.addHandler(hdlr=fileHandler)  # Adds the specified handler to fileLogger
 
 # Returns a new instance of StreamHandler class. If stream is specified, the instance will use it for logging output.
 # Reference: https://docs.python.org/3/library/logging.handlers.html#logging.StreamHandler
 consoleHandler = logging.StreamHandler()
 consoleHandler.setFormatter(fmt=logFormatter)  # Sets the Formatter for this handler to fmt.
 consoleLogger.setLevel(level=logging.DEBUG)  # Sets the threshold for this logger to level.
-consoleLogger.addHandler(hdlr=consoleHandler)  # Adds the specified handler to this logger.
+consoleLogger.addHandler(hdlr=consoleHandler)  # Adds the specified handler to consoleLogger
 
-# Returns a new instance of StreamHandler class. If stream is specified, the instance will use it for logging output.
-# Reference: https://docs.python.org/3/library/logging.handlers.html#logging.StreamHandler
-rootHandler = logging.StreamHandler()
-rootHandler.setFormatter(fmt=logFormatter)  # Sets the Formatter for this handler to fmt.
-rootHandler.setLevel(level=logging.CRITICAL)  # Sets the threshold for this logger to level.
+# Adds both file and console handlers to the rootLogger
+# Reference: https://docs.python.org/3/library/logging.html#logging.Logger.addHandler
 rootLogger.addHandler(hdlr=fileHandler)  # Adds the specified handler to this logger.
-rootLogger.addHandler(hdlr=consoleHandler)  # Adds the specified handler to this logger.
+rootLogger.addHandler(hdlr=consoleHandler)  # Adds the specified handler to rootLogger
 
 
 def multi_handlers() -> None:
